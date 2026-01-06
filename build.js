@@ -5,6 +5,7 @@ const esbuild = require("esbuild");
 const pug = require('pug');
 const sass = require('sass');
 const CleanCSS = require("clean-css");
+const archiver = require("archiver");
 /**
  * exec tsc command for translate T.S to J.S and minified the script code
  */
@@ -89,6 +90,40 @@ const staticBuilder = () => {
     }
   });
 };
+// build for firefox
+function prepareFirefoxBuild() {
+  const buildDir = path.join(__dirname, "build");
+  const chromeZip = path.join(buildDir, "chrome.zip");
+  const firefoxXpi = path.join(buildDir, "firefox.xpi");
+
+  // --- Chrome ---
+  const chromeOutput = fs.createWriteStream(chromeZip);
+  const chromeArchive = archiver("zip", { zlib: { level: 9 } });
+
+  chromeOutput.on("close", () => {
+    console.log(`✅ Chrome ZIP créé (${chromeArchive.pointer()} bytes)`);
+  });
+
+  chromeArchive.on("error", err => { throw err; });
+
+  chromeArchive.pipe(chromeOutput);
+  chromeArchive.directory(buildDir, false); // ajouter tout le dossier build
+  chromeArchive.finalize();
+
+  // --- Firefox ---
+  const firefoxOutput = fs.createWriteStream(firefoxXpi);
+  const firefoxArchive = archiver("zip", { zlib: { level: 9 } });
+
+  firefoxOutput.on("close", () => {
+    console.log(`✅ Firefox XPI créé (${firefoxArchive.pointer()} bytes)`);
+  });
+
+  firefoxArchive.on("error", err => { throw err; });
+
+  firefoxArchive.pipe(firefoxOutput);
+  firefoxArchive.directory(buildDir, false); // ajouter tout le dossier build
+  firefoxArchive.finalize();
+};
 // build all elements
 (() => {
   // clear build directory
@@ -113,6 +148,7 @@ const staticBuilder = () => {
     popupBuider();
     styleBuilder();
     staticBuilder();
+    prepareFirefoxBuild();
   }, 300)
 
 })();
